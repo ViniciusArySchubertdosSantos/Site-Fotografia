@@ -1,0 +1,304 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1c1c1c;
+}
+
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1c1c1c;
+}
+
+.botao{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #01060A;
+    font-size: .9em;
+    border-radius: 3px;
+}
+.voltar{
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: .9em;
+    border-radius: 3px;
+    background-color: #01060A;
+    color: #fff;
+}
+
+
+.contrate{
+    
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+   
+    font-size: .9em;
+    border-radius: 3px;
+    background-color:#01060A ;
+    color:#ffffff ;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #191970;
+}
+
+nav > a{
+    text-decoration: none;
+    color: white ;
+    font-weight: 800;
+    font-size: 32px ;
+    font-family: serif;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    width: 100%;
+}
+
+nav ul li{
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding:  10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:url("../img/camera.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    color: #fff;
+}
+
+header p {
+    margin-bottom: 2em;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 20px 20px;
+    background-color: #BFC1C2;
+    color: black;
+}
+
+#sobre h2{
+    color: black;
+}
+
+#sobre p{
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+
+#serviços{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:  30px;
+    background-color: #01060A;
+}
+
+#serviços div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+#serviços h2 , h3{
+    color: white;
+}
+
+#fotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: #BFC1C2;
+}
+
+#fotos h2 {
+    margin-bottom: 20px;
+    color: black;
+}
+
+#fotos img {
+    width: 100%;
+}
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #BFC1C2;
+}
+
+#contato h2 {
+    color: black;
+}
+#contato a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+footer{
+    text-align: center;
+    padding:10px  ;
+    color: #696969;
+    background-color:#01060A;
+    height: 70px;
+}
+
+
+
+@media screen and(min-width: 768px){
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav ul{
+        flex-direction: row;
+        width: 70% ;
+    }
+
+    header{
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    #sobre{
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+    #serviços{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    #serviços h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    #serviços div {
+        flex-grow: 1;
+        flex-basis:150px ;
+        padding: 0 10px;
+    }
+    
+    #fotos{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #fotos h2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #fotos img{
+        width: 33.3333333%;
+    }
+
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    #contato h2, #contato p{
+        width: 100%;
+        
+    }
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #01060A;
+    overflow: hidden;
+    height: 50px;
+    padding: 20px ;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #BFC1C2;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #BFC1C2;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
